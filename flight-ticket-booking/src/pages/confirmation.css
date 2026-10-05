@@ -1,0 +1,137 @@
+.confirmation-page {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background: #f3f6fb;
+}
+
+.ticket-card {
+  width: 650px;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.ticket-header {
+  text-align: center;
+  border-bottom: 2px dashed #2563eb;
+  padding-bottom: 20px;
+}
+
+.ticket-header h1 {
+  color: #16a34a;
+  margin-bottom: 10px;
+}
+
+.ticket-header p {
+  color: #555;
+}
+
+.ticket-details {
+  margin-top: 25px;
+}
+
+.ticket-details h2 {
+  text-align: center;
+  color: #2563eb;
+  margin-bottom: 25px;
+}
+
+.ticket-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 5px;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 16px;
+}
+
+.ticket-row span {
+  font-weight: 600;
+}
+
+.success {
+  color: #16a34a;
+}
+
+.ticket-status {
+  text-align: center;
+  margin-top: 25px;
+  padding: 12px;
+  background: #dcfce7;
+  color: #15803d;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.confirmation-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.confirmation-buttons button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.print-button {
+  background: #7c3aed;
+}
+
+.history-button {
+  background: #2563eb;
+}
+
+.home-button {
+  background: #16a34a;
+}
+
+.confirmation-buttons button:hover {
+  opacity: 0.85;
+}
+
+.not-found {
+  text-align: center;
+  color: #dc2626;
+}
+
+
+/* 🖨️ PRINT SETTINGS */
+
+@media print {
+
+  body {
+    background: white;
+  }
+
+  .navbar,
+  .footer,
+  .confirmation-buttons {
+    display: none !important;
+  }
+
+  .confirmation-page {
+    padding: 0;
+    min-height: auto;
+    background: white;
+  }
+
+  .ticket-card {
+    width: 100%;
+    box-shadow: none;
+    border: 2px solid #222;
+  }
+
+  .ticket-header h1 {
+    color: black;
+  }
+
+}

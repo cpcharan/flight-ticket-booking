@@ -1,0 +1,61 @@
+.flight-card{
+    width:420px;
+    background:white;
+    margin:40px auto;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    padding:25px;
+    transition:.3s;
+}
+
+.flight-card:hover{
+    transform:translateY(-8px);
+}
+
+.flight-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.flight-header h2{
+    color:#2563EB;
+}
+
+.price{
+    color:#16A34A;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.flight-details{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:30px 0;
+    text-align:center;
+}
+
+.flight-details h3{
+    font-size:30px;
+}
+
+.flight-line{
+    color:#2563EB;
+    font-size:18px;
+}
+
+.book-btn{
+    width:100%;
+    padding:12px;
+    background:#2563EB;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.book-btn:hover{
+    background:#1D4ED8;
+}

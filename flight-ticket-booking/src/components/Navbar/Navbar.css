@@ -1,0 +1,46 @@
+.navbar{
+    background:#2563EB;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 60px;
+    box-shadow:0 3px 12px rgba(0,0,0,.2);
+}
+
+.logo h2{
+    font-size:30px;
+    color:white;
+}
+
+.nav-links{
+    display:flex;
+    gap:35px;
+    list-style:none;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#FACC15;
+}
+
+.login-btn button{
+    background:#F59E0B;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+.login-btn button:hover{
+    background:#D97706;
+}
